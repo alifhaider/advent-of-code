@@ -36,11 +36,3 @@ for (let i = 0; i < instructions.length; i++) {
   }
 }
 console.log(result);
-
-// write a regex which will return: mul(2,4)mul(8,5)
-
-// should skip mul(5,5)mul(32,64)mul(11,8)
-// should return mul(2,4)mul(8,5)
-// this regex /mul\((\d+),(\d+)\)/g; returns all the mul instructions
-// we need to skip the ones that starts with don't and ends with undo
-// we can use negative look ahead and look behind to skip the instructions
